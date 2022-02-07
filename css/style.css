@@ -1,11 +1,139 @@
+/* リセットCSSここから */
 * {
   margin: 0 auto;
+  box-sizing: border-box;
   color: #333;
   font-size: 14px;
 }
+ body {
+  background-color: #f4f9ff;
+ }
+/* リセットCSSここまで */
+/* 共通ここから */
 img {
   width: 100%;
 }
-a {
-  
+.container {
+  max-width: 1000px;
 }
+
+.inner {
+  max-width: 600px;
+  padding: 40px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.section-title {
+  text-align-last: left;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+/* 共通ここまで */
+/* ここからheader */
+header {
+  margin-top: 60px;
+  padding: 0 10px;
+}
+header a {
+  text-decoration: none;
+  line-height: 0;
+}
+/* ここまでheader */
+
+
+/* ここからmain-visual */
+.main-visual {
+  width: 1000px;
+  height: 400px;
+  padding: 0 10px;
+}
+.main-visual img {
+  object-fit: cover;
+}
+/* ここまでmain-visual */
+
+
+/* ここからindex */
+#index {
+  background-color: #fff;
+}
+#index li {
+  margin-bottom: 20px;
+}
+#index li:last-child {
+  margin-bottom: 0;
+}
+/* ここまでindex */
+
+/* ここからdetail */
+#detail {
+  margin-bottom: 100px;
+}
+#detail img {
+  width: 270px;
+  margin-right: 60px;
+}
+.detail-title  {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+#detail .content {
+  display: flex;
+  align-items: flex-start;
+}
+table {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 25px;
+  padding: 0 16px;
+}
+table th {
+  width: 25%;
+}
+table td {
+  text-align: left;
+  width: 75%;
+}
+.container-title {
+  margin-bottom: 20px;
+}
+.detail-text {
+  text-align-last: left;
+  margin-bottom: 20px;
+}
+#detail .text {
+  width: 270px;
+}
+#detail a {
+  text-align-last: left;
+}
+
+/* ここまでdetail */
+/* ここからfooter */
+footer {
+  padding: 15px 0;
+  font-size: 10px;
+}
+/* ここまでfooter */
+/* ここからレスポンシブ */
+@media screen and (max-width: 1024px) {
+  .main-visual {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .inner {
+    width: 100%;
+    padding: 40px;
+  }
+  #detail .content {
+    flex-direction: column;
+  }
+  #detail img {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
+}
+/* ここまでレスポンシブ */
